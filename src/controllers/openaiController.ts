@@ -14,7 +14,7 @@ if (!apiKey) {
     process.exit(1); // Exit the process if the API key is not found
 }
 
-const openai = new OpenAI({ apiKey });
+const openai = new OpenAI({ apiKey: apiKey });
 
 
 async function chatToAndFro(messages: any) {
